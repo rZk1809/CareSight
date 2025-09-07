@@ -1,0 +1,97 @@
+Start,Stop,Patient,Encounter,Code,Description,System
+2007-12-23,,patient_001,enc_a73915dc,44054006,Diabetes mellitus,SNOMED-CT
+2010-12-22,,patient_001,enc_2f4bffec,55822004,Hyperlipidemia,SNOMED-CT
+2018-11-29,,patient_002,enc_d908a5ca,44054006,Diabetes mellitus,SNOMED-CT
+2022-12-20,,patient_002,enc_0b867c57,55822004,Hyperlipidemia,SNOMED-CT
+2022-04-16,,patient_003,enc_f0f6fa0d,44054006,Diabetes mellitus,SNOMED-CT
+2024-05-24,,patient_003,enc_46582c25,38341003,Hypertension,SNOMED-CT
+2016-06-06,,patient_004,enc_3892b6a8,44054006,Diabetes mellitus,SNOMED-CT
+2017-03-09,,patient_004,enc_f22b64c1,38341003,Hypertension,SNOMED-CT
+2009-12-21,,patient_005,enc_8515e3de,44054006,Diabetes mellitus,SNOMED-CT
+2012-12-07,,patient_005,enc_7e4a90b2,55822004,Hyperlipidemia,SNOMED-CT
+1999-01-28,,patient_006,enc_14b12c00,44054006,Diabetes mellitus,SNOMED-CT
+2001-09-29,,patient_006,enc_d7a09c73,38341003,Hypertension,SNOMED-CT
+2001-09-11,,patient_006,enc_3f2a2456,55822004,Hyperlipidemia,SNOMED-CT
+2015-01-30,,patient_007,enc_b9a8f580,44054006,Diabetes mellitus,SNOMED-CT
+1986-07-20,,patient_008,enc_e8898518,44054006,Diabetes mellitus,SNOMED-CT
+1987-01-02,,patient_008,enc_818f04ab,55822004,Hyperlipidemia,SNOMED-CT
+1988-03-11,,patient_008,enc_746e66fa,195967001,Asthma,SNOMED-CT
+1994-05-08,,patient_009,enc_d444945c,44054006,Diabetes mellitus,SNOMED-CT
+1996-10-21,,patient_009,enc_07560f41,195967001,Asthma,SNOMED-CT
+2014-05-31,,patient_010,enc_9b63d8ad,44054006,Diabetes mellitus,SNOMED-CT
+2017-01-10,,patient_010,enc_a033f08f,38341003,Hypertension,SNOMED-CT
+2015-10-21,,patient_010,enc_831477fe,55822004,Hyperlipidemia,SNOMED-CT
+2012-11-30,,patient_011,enc_41b71e0b,44054006,Diabetes mellitus,SNOMED-CT
+2016-10-11,,patient_011,enc_c86e4f4f,55822004,Hyperlipidemia,SNOMED-CT
+2004-04-02,,patient_012,enc_af5c60d2,44054006,Diabetes mellitus,SNOMED-CT
+2006-03-05,,patient_012,enc_1520a6d7,55822004,Hyperlipidemia,SNOMED-CT
+1981-04-01,,patient_013,enc_b1fa2242,44054006,Diabetes mellitus,SNOMED-CT
+1989-06-28,,patient_014,enc_ec6f9f30,44054006,Diabetes mellitus,SNOMED-CT
+1992-04-09,,patient_014,enc_03d55922,38341003,Hypertension,SNOMED-CT
+2000-06-26,,patient_015,enc_845bb54c,44054006,Diabetes mellitus,SNOMED-CT
+2003-06-07,,patient_015,enc_dd08b555,38341003,Hypertension,SNOMED-CT
+1989-06-26,,patient_016,enc_1c915a8f,44054006,Diabetes mellitus,SNOMED-CT
+1989-07-10,,patient_016,enc_7fbca586,55822004,Hyperlipidemia,SNOMED-CT
+1990-11-28,,patient_016,enc_49f38913,195967001,Asthma,SNOMED-CT
+2009-06-06,,patient_017,enc_c798637a,44054006,Diabetes mellitus,SNOMED-CT
+2012-05-27,,patient_017,enc_72aa2d2c,55822004,Hyperlipidemia,SNOMED-CT
+2038-08-09,,patient_018,enc_54044e51,44054006,Diabetes mellitus,SNOMED-CT
+1995-07-05,,patient_019,enc_b1532c63,44054006,Diabetes mellitus,SNOMED-CT
+1995-11-16,,patient_019,enc_6082410b,55822004,Hyperlipidemia,SNOMED-CT
+2026-11-13,,patient_020,enc_5eeb22e0,44054006,Diabetes mellitus,SNOMED-CT
+2027-12-24,,patient_020,enc_d9972c02,38341003,Hypertension,SNOMED-CT
+1994-07-29,,patient_021,enc_ef60d850,44054006,Diabetes mellitus,SNOMED-CT
+2016-06-20,,patient_022,enc_068e4003,44054006,Diabetes mellitus,SNOMED-CT
+2000-07-08,,patient_023,enc_808ec112,44054006,Diabetes mellitus,SNOMED-CT
+2002-09-10,,patient_023,enc_b56c0720,38341003,Hypertension,SNOMED-CT
+2000-10-08,,patient_024,enc_39a5d150,44054006,Diabetes mellitus,SNOMED-CT
+2003-02-18,,patient_024,enc_e11b8150,55822004,Hyperlipidemia,SNOMED-CT
+2022-03-01,,patient_025,enc_990ebb5d,44054006,Diabetes mellitus,SNOMED-CT
+2022-10-17,,patient_025,enc_0ed4e72c,195967001,Asthma,SNOMED-CT
+1992-09-30,,patient_026,enc_c3c1025d,44054006,Diabetes mellitus,SNOMED-CT
+1994-03-08,,patient_026,enc_89217f63,55822004,Hyperlipidemia,SNOMED-CT
+1997-06-18,,patient_026,enc_4a785584,195967001,Asthma,SNOMED-CT
+2026-10-31,,patient_027,enc_9b826bbb,44054006,Diabetes mellitus,SNOMED-CT
+2029-08-08,,patient_027,enc_a2ac250c,195967001,Asthma,SNOMED-CT
+1990-05-08,,patient_028,enc_416b9228,44054006,Diabetes mellitus,SNOMED-CT
+1994-01-30,,patient_028,enc_d07c1cd4,55822004,Hyperlipidemia,SNOMED-CT
+1991-07-16,,patient_029,enc_f4ec1876,44054006,Diabetes mellitus,SNOMED-CT
+1995-08-20,,patient_029,enc_183d7306,55822004,Hyperlipidemia,SNOMED-CT
+2040-02-06,,patient_030,enc_e65e20cc,44054006,Diabetes mellitus,SNOMED-CT
+2043-09-04,,patient_030,enc_a5231311,38341003,Hypertension,SNOMED-CT
+1983-10-22,,patient_031,enc_7f8e5931,44054006,Diabetes mellitus,SNOMED-CT
+1987-09-25,,patient_031,enc_d8fe2fa5,55822004,Hyperlipidemia,SNOMED-CT
+2025-12-01,,patient_032,enc_e02518ac,44054006,Diabetes mellitus,SNOMED-CT
+2027-09-25,,patient_032,enc_7675ff10,55822004,Hyperlipidemia,SNOMED-CT
+2009-02-25,,patient_033,enc_b14b0740,44054006,Diabetes mellitus,SNOMED-CT
+1985-01-03,,patient_034,enc_436f4149,44054006,Diabetes mellitus,SNOMED-CT
+1988-11-12,,patient_034,enc_2cf7fead,38341003,Hypertension,SNOMED-CT
+1987-08-12,,patient_034,enc_59c42911,195967001,Asthma,SNOMED-CT
+1977-05-03,,patient_035,enc_7266e617,44054006,Diabetes mellitus,SNOMED-CT
+1982-02-25,,patient_035,enc_88184507,195967001,Asthma,SNOMED-CT
+2015-05-01,,patient_036,enc_e6f9b2a5,44054006,Diabetes mellitus,SNOMED-CT
+2033-09-29,,patient_037,enc_fb272c9b,44054006,Diabetes mellitus,SNOMED-CT
+2037-01-18,,patient_037,enc_5805a650,195967001,Asthma,SNOMED-CT
+2029-04-23,,patient_038,enc_29fc0c94,44054006,Diabetes mellitus,SNOMED-CT
+2030-02-10,,patient_038,enc_4aec0ed0,38341003,Hypertension,SNOMED-CT
+2019-01-08,,patient_039,enc_743fd8e7,44054006,Diabetes mellitus,SNOMED-CT
+1998-07-28,,patient_040,enc_4399dccc,44054006,Diabetes mellitus,SNOMED-CT
+1999-01-31,,patient_041,enc_8bee5273,44054006,Diabetes mellitus,SNOMED-CT
+2003-04-14,,patient_041,enc_eedebc6b,55822004,Hyperlipidemia,SNOMED-CT
+2001-06-12,,patient_041,enc_7c6add90,195967001,Asthma,SNOMED-CT
+1980-08-21,,patient_042,enc_674a1fdf,44054006,Diabetes mellitus,SNOMED-CT
+1983-03-07,,patient_042,enc_dc49eb10,38341003,Hypertension,SNOMED-CT
+2029-07-29,,patient_043,enc_432924a5,44054006,Diabetes mellitus,SNOMED-CT
+2033-07-06,,patient_043,enc_48cb95a1,195967001,Asthma,SNOMED-CT
+1980-08-17,,patient_044,enc_32f6183e,44054006,Diabetes mellitus,SNOMED-CT
+1981-01-07,,patient_044,enc_c22d0eeb,55822004,Hyperlipidemia,SNOMED-CT
+1992-07-01,,patient_045,enc_9cae3d51,44054006,Diabetes mellitus,SNOMED-CT
+1994-12-14,,patient_045,enc_1305ec96,55822004,Hyperlipidemia,SNOMED-CT
+1997-01-31,,patient_045,enc_4f5db719,195967001,Asthma,SNOMED-CT
+2031-08-04,,patient_046,enc_a1a3b563,44054006,Diabetes mellitus,SNOMED-CT
+2030-07-11,,patient_047,enc_e6bb3f05,44054006,Diabetes mellitus,SNOMED-CT
+1987-11-17,,patient_048,enc_3dbb6249,44054006,Diabetes mellitus,SNOMED-CT
+1991-10-30,,patient_048,enc_1767db3f,195967001,Asthma,SNOMED-CT
+2021-08-30,,patient_049,enc_fdd1b479,44054006,Diabetes mellitus,SNOMED-CT
+2001-09-18,,patient_050,enc_9aee3580,44054006,Diabetes mellitus,SNOMED-CT
+2004-02-12,,patient_050,enc_f015e439,55822004,Hyperlipidemia,SNOMED-CT

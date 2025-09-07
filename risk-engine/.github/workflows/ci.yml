@@ -1,0 +1,325 @@
+name: CareSight Risk Engine CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run daily at 2 AM UTC for automated retraining
+    - cron: '0 2 * * *'
+
+env:
+  PYTHON_VERSION: '3.9'
+  DVC_CACHE_TYPE: 'symlink'
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-cov black flake8 mypy
+        
+    - name: Lint with flake8
+      run: |
+        # Stop the build if there are Python syntax errors or undefined names
+        flake8 src/ --count --select=E9,F63,F7,F82 --show-source --statistics
+        # Exit-zero treats all errors as warnings
+        flake8 src/ --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        
+    - name: Format check with black
+      run: |
+        black --check --diff src/
+        
+    - name: Type check with mypy
+      run: |
+        mypy src/ --ignore-missing-imports
+        
+    - name: Run unit tests
+      run: |
+        python -m pytest tests/ -v --cov=src --cov-report=xml --cov-report=html
+        
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        
+    - name: Test data pipeline
+      run: |
+        python scripts/test_pipeline.py
+        
+    - name: Test model training
+      run: |
+        python scripts/test_training.py
+        
+    - name: Test API endpoints
+      run: |
+        python scripts/test_api.py
+        
+    - name: Test explainability
+      run: |
+        python scripts/test_explainability.py
+        
+    - name: Test monitoring
+      run: |
+        python scripts/test_monitoring.py
+
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install safety bandit
+        
+    - name: Run safety check
+      run: |
+        safety check --json
+        
+    - name: Run bandit security scan
+      run: |
+        bandit -r src/ -f json -o bandit-report.json
+        
+    - name: Upload security reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: security-reports
+        path: |
+          bandit-report.json
+
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    needs: [test, security]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Set up DVC
+      uses: iterative/setup-dvc@v1
+      
+    - name: Configure DVC remote (if using cloud storage)
+      run: |
+        # Configure your DVC remote here
+        # dvc remote modify myremote access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+        # dvc remote modify myremote secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        echo "DVC remote configuration skipped for local setup"
+        
+    - name: Pull DVC data
+      run: |
+        # dvc pull
+        echo "DVC pull skipped for local setup"
+        
+    - name: Build Docker image
+      run: |
+        docker build -t caresight-risk-engine:${{ github.sha }} .
+        docker tag caresight-risk-engine:${{ github.sha }} caresight-risk-engine:latest
+        
+    - name: Run integration tests
+      run: |
+        # Start the container and run integration tests
+        docker run --rm -d --name test-container -p 8000:8000 caresight-risk-engine:latest
+        sleep 30  # Wait for container to start
+        
+        # Test API endpoints
+        curl -f http://localhost:8000/health || exit 1
+        
+        # Stop container
+        docker stop test-container
+        
+    - name: Deploy to staging (placeholder)
+      run: |
+        echo "Deploying to staging environment..."
+        # Add your deployment commands here
+        # Example: kubectl apply -f k8s/staging/
+        
+    - name: Run smoke tests
+      run: |
+        echo "Running smoke tests..."
+        # Add smoke tests here
+        
+    - name: Deploy to production (placeholder)
+      if: success()
+      run: |
+        echo "Deploying to production environment..."
+        # Add your production deployment commands here
+        # Example: kubectl apply -f k8s/production/
+
+  model-retraining:
+    name: Automated Model Retraining
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Set up DVC
+      uses: iterative/setup-dvc@v1
+      
+    - name: Pull latest data
+      run: |
+        # dvc pull
+        echo "DVC pull skipped for local setup"
+        
+    - name: Check for data drift
+      run: |
+        python scripts/check_drift.py
+        
+    - name: Retrain model if needed
+      run: |
+        python scripts/automated_retraining.py
+        
+    - name: Evaluate new model
+      run: |
+        python scripts/evaluate_model.py
+        
+    - name: Update model registry
+      run: |
+        python scripts/update_model_registry.py
+        
+    - name: Create pull request with new model
+      if: success()
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Automated model retraining - $(date)"
+        title: "Automated Model Update"
+        body: |
+          This is an automated pull request created by the model retraining pipeline.
+          
+          ## Changes
+          - Updated model artifacts
+          - New performance metrics
+          - Updated model registry
+          
+          ## Performance
+          Please review the model performance metrics before merging.
+        branch: automated-retraining-$(date +%Y%m%d-%H%M%S)
+
+  monitoring:
+    name: Model Monitoring
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Run monitoring checks
+      run: |
+        python scripts/run_monitoring.py
+        
+    - name: Generate monitoring report
+      run: |
+        python scripts/generate_monitoring_report.py
+        
+    - name: Upload monitoring artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: monitoring-reports
+        path: |
+          data/reports/monitoring_report.json
+          data/reports/drift_report.json
+          
+    - name: Send alerts if issues detected
+      if: failure()
+      run: |
+        echo "Monitoring detected issues - sending alerts"
+        # Add alerting logic here (Slack, email, etc.)
+        # curl -X POST -H 'Content-type: application/json' \
+        #   --data '{"text":"Model monitoring detected issues in CareSight Risk Engine"}' \
+        #   ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    needs: [build-and-deploy]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Generate changelog
+      run: |
+        # Generate changelog from commits
+        git log --oneline --since="1 week ago" > CHANGELOG.md
+        
+    - name: Create release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ github.run_number }}
+        release_name: Release v${{ github.run_number }}
+        body_path: CHANGELOG.md
+        draft: false
+        prerelease: false

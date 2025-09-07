@@ -1,0 +1,246 @@
+Start,Stop,Patient,Payer,Encounter,Code,Description,Base_Cost,Payer_Coverage,Dispenses,TotalCost,ReasonCode,ReasonDescription
+2023-12-15,,patient_001,Sample Insurance,enc_2f4ac0cd,860975,Metformin 500 MG Oral Tablet,81,25,7,171,44054006,Diabetes mellitus
+2023-08-03,,patient_001,Sample Insurance,enc_26aff0cb,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",97,121,4,921,44054006,Diabetes mellitus
+2023-06-01,,patient_001,Sample Insurance,enc_38d336d0,897122,Glipizide 5 MG Oral Tablet,62,6,8,541,44054006,Diabetes mellitus
+2023-10-21,,patient_001,Sample Insurance,enc_26006b8f,896188,Lisinopril 10 MG Oral Tablet,197,25,1,509,44054006,Diabetes mellitus
+2023-11-10,,patient_001,Sample Insurance,enc_bf5f0016,860975,Metformin 500 MG Oral Tablet,98,53,11,108,44054006,Diabetes mellitus
+2023-06-19,,patient_001,Sample Insurance,enc_4eb1077d,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",197,19,3,925,44054006,Diabetes mellitus
+2023-02-24,2023-08-03,patient_001,Sample Insurance,enc_88261542,897122,Glipizide 5 MG Oral Tablet,60,139,5,890,44054006,Diabetes mellitus
+2023-06-16,,patient_001,Sample Insurance,enc_a8c07e98,896188,Lisinopril 10 MG Oral Tablet,98,64,2,826,44054006,Diabetes mellitus
+2023-02-22,,patient_002,Sample Insurance,enc_a7183ae4,860975,Metformin 500 MG Oral Tablet,101,115,7,477,44054006,Diabetes mellitus
+2023-09-21,,patient_002,Sample Insurance,enc_85de8c7d,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",90,54,8,437,44054006,Diabetes mellitus
+2023-01-02,,patient_002,Sample Insurance,enc_ced7c822,897122,Glipizide 5 MG Oral Tablet,63,110,4,871,44054006,Diabetes mellitus
+2023-07-10,2023-09-21,patient_003,Sample Insurance,enc_8b8d9119,860975,Metformin 500 MG Oral Tablet,171,18,8,511,44054006,Diabetes mellitus
+2023-08-03,,patient_003,Sample Insurance,enc_7c542693,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",199,44,5,769,44054006,Diabetes mellitus
+2023-08-25,,patient_003,Sample Insurance,enc_2f58f7e7,897122,Glipizide 5 MG Oral Tablet,62,28,10,266,44054006,Diabetes mellitus
+2023-09-09,,patient_003,Sample Insurance,enc_a6298d20,896188,Lisinopril 10 MG Oral Tablet,50,19,1,906,44054006,Diabetes mellitus
+2023-11-23,,patient_003,Sample Insurance,enc_ba720570,860975,Metformin 500 MG Oral Tablet,138,140,8,112,44054006,Diabetes mellitus
+2023-05-19,,patient_003,Sample Insurance,enc_004ec311,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",145,37,11,822,44054006,Diabetes mellitus
+2023-08-19,,patient_004,Sample Insurance,enc_87edebad,860975,Metformin 500 MG Oral Tablet,37,139,9,889,44054006,Diabetes mellitus
+2023-09-25,,patient_004,Sample Insurance,enc_6401a5c2,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",57,66,8,854,44054006,Diabetes mellitus
+2023-04-09,,patient_004,Sample Insurance,enc_0b5395bf,897122,Glipizide 5 MG Oral Tablet,44,105,3,818,44054006,Diabetes mellitus
+2023-08-06,,patient_005,Sample Insurance,enc_e354a866,860975,Metformin 500 MG Oral Tablet,151,107,11,442,44054006,Diabetes mellitus
+2023-07-26,,patient_005,Sample Insurance,enc_60bc2caa,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",51,128,3,624,44054006,Diabetes mellitus
+2023-12-18,,patient_005,Sample Insurance,enc_0f85bc6a,897122,Glipizide 5 MG Oral Tablet,61,100,4,783,44054006,Diabetes mellitus
+2023-08-19,,patient_005,Sample Insurance,enc_7802b51d,896188,Lisinopril 10 MG Oral Tablet,180,33,4,574,44054006,Diabetes mellitus
+2023-06-09,,patient_005,Sample Insurance,enc_1b90d5c4,860975,Metformin 500 MG Oral Tablet,95,32,2,731,44054006,Diabetes mellitus
+2023-02-14,,patient_005,Sample Insurance,enc_cad3bcdb,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",143,32,4,847,44054006,Diabetes mellitus
+2023-11-27,,patient_006,Sample Insurance,enc_85aade80,860975,Metformin 500 MG Oral Tablet,101,133,9,332,44054006,Diabetes mellitus
+2023-05-01,2024-01-18,patient_006,Sample Insurance,enc_61662105,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",12,107,6,505,44054006,Diabetes mellitus
+2023-05-17,,patient_006,Sample Insurance,enc_2603a602,897122,Glipizide 5 MG Oral Tablet,60,63,6,721,44054006,Diabetes mellitus
+2023-04-06,,patient_006,Sample Insurance,enc_f61ef6eb,896188,Lisinopril 10 MG Oral Tablet,189,117,1,491,44054006,Diabetes mellitus
+2023-02-21,,patient_006,Sample Insurance,enc_26a83ab1,860975,Metformin 500 MG Oral Tablet,48,134,3,162,44054006,Diabetes mellitus
+2023-04-11,,patient_006,Sample Insurance,enc_d84d47a1,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",90,117,2,691,44054006,Diabetes mellitus
+2023-08-08,,patient_006,Sample Insurance,enc_0a0974cf,897122,Glipizide 5 MG Oral Tablet,138,130,2,102,44054006,Diabetes mellitus
+2023-08-06,2024-05-08,patient_007,Sample Insurance,enc_a5804259,860975,Metformin 500 MG Oral Tablet,77,127,1,816,44054006,Diabetes mellitus
+2023-10-21,,patient_007,Sample Insurance,enc_2a635f19,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",125,102,6,956,44054006,Diabetes mellitus
+2023-08-28,2024-04-14,patient_007,Sample Insurance,enc_b0daf42c,897122,Glipizide 5 MG Oral Tablet,133,74,3,709,44054006,Diabetes mellitus
+2023-09-09,,patient_007,Sample Insurance,enc_60a4db0a,896188,Lisinopril 10 MG Oral Tablet,156,94,3,560,44054006,Diabetes mellitus
+2023-05-27,,patient_007,Sample Insurance,enc_d2081620,860975,Metformin 500 MG Oral Tablet,61,132,7,387,44054006,Diabetes mellitus
+2023-09-24,,patient_008,Sample Insurance,enc_5f08fd44,860975,Metformin 500 MG Oral Tablet,187,46,3,312,44054006,Diabetes mellitus
+2023-09-09,,patient_008,Sample Insurance,enc_6478d5f4,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",121,64,1,51,44054006,Diabetes mellitus
+2023-10-31,2024-01-05,patient_009,Sample Insurance,enc_7b4493fe,860975,Metformin 500 MG Oral Tablet,169,13,9,148,44054006,Diabetes mellitus
+2023-05-27,2023-11-03,patient_009,Sample Insurance,enc_ce980985,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",157,58,8,722,44054006,Diabetes mellitus
+2023-03-16,2023-07-27,patient_010,Sample Insurance,enc_c0302b1a,860975,Metformin 500 MG Oral Tablet,93,116,9,148,44054006,Diabetes mellitus
+2023-06-02,,patient_010,Sample Insurance,enc_57718e4a,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",137,114,2,755,44054006,Diabetes mellitus
+2023-11-06,,patient_010,Sample Insurance,enc_7df26830,897122,Glipizide 5 MG Oral Tablet,198,72,1,447,44054006,Diabetes mellitus
+2023-10-04,,patient_010,Sample Insurance,enc_91a4a71f,896188,Lisinopril 10 MG Oral Tablet,137,140,7,244,44054006,Diabetes mellitus
+2023-05-08,,patient_010,Sample Insurance,enc_c0ff2e18,860975,Metformin 500 MG Oral Tablet,196,119,6,424,44054006,Diabetes mellitus
+2023-08-26,,patient_011,Sample Insurance,enc_da0b33fa,860975,Metformin 500 MG Oral Tablet,118,55,6,825,44054006,Diabetes mellitus
+2023-10-10,,patient_011,Sample Insurance,enc_fc213f05,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",30,34,1,333,44054006,Diabetes mellitus
+2023-11-13,,patient_011,Sample Insurance,enc_c108ba99,897122,Glipizide 5 MG Oral Tablet,13,39,1,561,44054006,Diabetes mellitus
+2023-01-17,2023-07-23,patient_011,Sample Insurance,enc_5799a811,896188,Lisinopril 10 MG Oral Tablet,55,121,6,148,44054006,Diabetes mellitus
+2023-08-21,2024-07-17,patient_011,Sample Insurance,enc_ee812bba,860975,Metformin 500 MG Oral Tablet,190,99,3,749,44054006,Diabetes mellitus
+2023-04-26,,patient_011,Sample Insurance,enc_9d00cf26,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",169,71,2,842,44054006,Diabetes mellitus
+2023-08-11,2024-07-28,patient_011,Sample Insurance,enc_7986f4b9,897122,Glipizide 5 MG Oral Tablet,113,28,2,337,44054006,Diabetes mellitus
+2023-12-08,,patient_012,Sample Insurance,enc_5d85417e,860975,Metformin 500 MG Oral Tablet,136,134,10,834,44054006,Diabetes mellitus
+2023-04-14,,patient_012,Sample Insurance,enc_a1b94e10,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",52,43,10,808,44054006,Diabetes mellitus
+2023-01-26,2023-03-09,patient_012,Sample Insurance,enc_c3eed284,897122,Glipizide 5 MG Oral Tablet,69,139,9,85,44054006,Diabetes mellitus
+2023-06-22,,patient_012,Sample Insurance,enc_63513df0,896188,Lisinopril 10 MG Oral Tablet,17,148,3,520,44054006,Diabetes mellitus
+2023-05-23,,patient_012,Sample Insurance,enc_653ff193,860975,Metformin 500 MG Oral Tablet,75,36,7,903,44054006,Diabetes mellitus
+2023-02-20,,patient_012,Sample Insurance,enc_f57e3cae,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",72,129,6,363,44054006,Diabetes mellitus
+2023-02-27,,patient_012,Sample Insurance,enc_a7b019ed,897122,Glipizide 5 MG Oral Tablet,189,74,6,493,44054006,Diabetes mellitus
+2023-04-11,,patient_012,Sample Insurance,enc_ad22ab1a,896188,Lisinopril 10 MG Oral Tablet,62,64,5,152,44054006,Diabetes mellitus
+2023-09-19,,patient_013,Sample Insurance,enc_bf10ee99,860975,Metformin 500 MG Oral Tablet,125,98,3,872,44054006,Diabetes mellitus
+2023-11-04,,patient_013,Sample Insurance,enc_96edb33d,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",123,128,10,719,44054006,Diabetes mellitus
+2023-05-27,2024-05-09,patient_013,Sample Insurance,enc_8f3e6753,897122,Glipizide 5 MG Oral Tablet,28,96,10,395,44054006,Diabetes mellitus
+2023-08-17,,patient_013,Sample Insurance,enc_782f3c70,896188,Lisinopril 10 MG Oral Tablet,71,27,9,957,44054006,Diabetes mellitus
+2023-05-09,,patient_013,Sample Insurance,enc_0e569fe4,860975,Metformin 500 MG Oral Tablet,10,38,6,609,44054006,Diabetes mellitus
+2023-08-25,,patient_014,Sample Insurance,enc_bb7eb6ee,860975,Metformin 500 MG Oral Tablet,25,73,6,910,44054006,Diabetes mellitus
+2023-09-04,,patient_014,Sample Insurance,enc_2cb5922b,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",163,148,3,135,44054006,Diabetes mellitus
+2023-10-12,,patient_015,Sample Insurance,enc_e2038105,860975,Metformin 500 MG Oral Tablet,78,51,1,143,44054006,Diabetes mellitus
+2023-08-26,2024-04-15,patient_015,Sample Insurance,enc_40880d78,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",153,89,7,661,44054006,Diabetes mellitus
+2023-09-11,,patient_016,Sample Insurance,enc_40fecd40,860975,Metformin 500 MG Oral Tablet,32,14,6,886,44054006,Diabetes mellitus
+2023-04-10,,patient_016,Sample Insurance,enc_26fb87a1,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",147,100,1,374,44054006,Diabetes mellitus
+2023-01-04,,patient_017,Sample Insurance,enc_0a50af6e,860975,Metformin 500 MG Oral Tablet,89,6,1,945,44054006,Diabetes mellitus
+2023-06-09,2023-12-07,patient_017,Sample Insurance,enc_2b33e64d,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",149,128,1,978,44054006,Diabetes mellitus
+2023-06-28,2024-04-20,patient_017,Sample Insurance,enc_6f7e7260,897122,Glipizide 5 MG Oral Tablet,76,69,1,217,44054006,Diabetes mellitus
+2023-11-26,,patient_017,Sample Insurance,enc_299644f8,896188,Lisinopril 10 MG Oral Tablet,38,145,2,302,44054006,Diabetes mellitus
+2023-08-30,,patient_017,Sample Insurance,enc_a7302107,860975,Metformin 500 MG Oral Tablet,90,94,8,654,44054006,Diabetes mellitus
+2023-03-31,,patient_017,Sample Insurance,enc_5662d6fe,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",124,109,7,245,44054006,Diabetes mellitus
+2023-04-24,,patient_018,Sample Insurance,enc_80db2f2d,860975,Metformin 500 MG Oral Tablet,166,124,4,778,44054006,Diabetes mellitus
+2023-10-04,2024-04-14,patient_018,Sample Insurance,enc_e375005f,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",147,105,9,969,44054006,Diabetes mellitus
+2023-07-11,,patient_018,Sample Insurance,enc_7c4ac40d,897122,Glipizide 5 MG Oral Tablet,108,40,2,145,44054006,Diabetes mellitus
+2023-07-09,,patient_019,Sample Insurance,enc_ab8e6034,860975,Metformin 500 MG Oral Tablet,21,117,7,574,44054006,Diabetes mellitus
+2023-10-06,2024-08-16,patient_019,Sample Insurance,enc_5e657eac,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",26,117,4,929,44054006,Diabetes mellitus
+2023-08-05,,patient_019,Sample Insurance,enc_98f92cb2,897122,Glipizide 5 MG Oral Tablet,196,23,1,661,44054006,Diabetes mellitus
+2023-08-21,2024-06-10,patient_019,Sample Insurance,enc_7d0b4512,896188,Lisinopril 10 MG Oral Tablet,37,132,4,900,44054006,Diabetes mellitus
+2023-05-24,,patient_019,Sample Insurance,enc_9caa4db5,860975,Metformin 500 MG Oral Tablet,108,144,9,997,44054006,Diabetes mellitus
+2023-02-22,2023-05-19,patient_019,Sample Insurance,enc_7632c83a,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",48,113,5,91,44054006,Diabetes mellitus
+2023-07-05,,patient_019,Sample Insurance,enc_f0e0c248,897122,Glipizide 5 MG Oral Tablet,131,137,3,264,44054006,Diabetes mellitus
+2023-08-09,,patient_019,Sample Insurance,enc_8771dbed,896188,Lisinopril 10 MG Oral Tablet,155,80,9,123,44054006,Diabetes mellitus
+2023-09-10,2024-03-31,patient_020,Sample Insurance,enc_a3abae6d,860975,Metformin 500 MG Oral Tablet,150,141,2,844,44054006,Diabetes mellitus
+2023-05-02,,patient_020,Sample Insurance,enc_bbd6a5e6,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",38,87,8,545,44054006,Diabetes mellitus
+2023-12-31,,patient_020,Sample Insurance,enc_d5243bd7,897122,Glipizide 5 MG Oral Tablet,154,75,9,350,44054006,Diabetes mellitus
+2023-10-19,,patient_021,Sample Insurance,enc_82318d35,860975,Metformin 500 MG Oral Tablet,168,23,6,216,44054006,Diabetes mellitus
+2023-04-01,,patient_021,Sample Insurance,enc_3f819534,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",28,43,3,222,44054006,Diabetes mellitus
+2023-05-21,,patient_021,Sample Insurance,enc_b87eee21,897122,Glipizide 5 MG Oral Tablet,135,62,4,525,44054006,Diabetes mellitus
+2023-11-13,2023-12-13,patient_021,Sample Insurance,enc_f53a572f,896188,Lisinopril 10 MG Oral Tablet,140,96,9,240,44054006,Diabetes mellitus
+2023-11-08,,patient_021,Sample Insurance,enc_ab293241,860975,Metformin 500 MG Oral Tablet,126,138,10,605,44054006,Diabetes mellitus
+2023-06-09,,patient_022,Sample Insurance,enc_c411c530,860975,Metformin 500 MG Oral Tablet,56,84,6,262,44054006,Diabetes mellitus
+2023-07-22,2024-01-31,patient_022,Sample Insurance,enc_ebe4a241,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",156,24,9,451,44054006,Diabetes mellitus
+2023-02-16,,patient_022,Sample Insurance,enc_ccc707dd,897122,Glipizide 5 MG Oral Tablet,23,147,1,422,44054006,Diabetes mellitus
+2023-02-23,,patient_022,Sample Insurance,enc_4eb55c78,896188,Lisinopril 10 MG Oral Tablet,153,16,10,785,44054006,Diabetes mellitus
+2023-09-29,2024-04-01,patient_022,Sample Insurance,enc_0476df3d,860975,Metformin 500 MG Oral Tablet,126,12,10,397,44054006,Diabetes mellitus
+2023-06-13,,patient_022,Sample Insurance,enc_39b2e15f,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",195,64,2,589,44054006,Diabetes mellitus
+2023-12-23,2024-07-31,patient_023,Sample Insurance,enc_e051808d,860975,Metformin 500 MG Oral Tablet,164,149,9,978,44054006,Diabetes mellitus
+2023-07-31,,patient_023,Sample Insurance,enc_fd51bb77,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",166,145,3,302,44054006,Diabetes mellitus
+2023-03-23,,patient_023,Sample Insurance,enc_e47df07f,897122,Glipizide 5 MG Oral Tablet,56,14,8,847,44054006,Diabetes mellitus
+2023-08-30,,patient_023,Sample Insurance,enc_d8f4504d,896188,Lisinopril 10 MG Oral Tablet,14,123,8,850,44054006,Diabetes mellitus
+2023-03-06,,patient_023,Sample Insurance,enc_db19c48f,860975,Metformin 500 MG Oral Tablet,186,15,5,331,44054006,Diabetes mellitus
+2023-08-05,2024-06-12,patient_024,Sample Insurance,enc_23f62c16,860975,Metformin 500 MG Oral Tablet,186,102,9,148,44054006,Diabetes mellitus
+2023-11-07,2024-06-20,patient_024,Sample Insurance,enc_d0b11d10,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",104,137,6,820,44054006,Diabetes mellitus
+2023-01-23,2023-08-05,patient_024,Sample Insurance,enc_346104cf,897122,Glipizide 5 MG Oral Tablet,92,149,5,127,44054006,Diabetes mellitus
+2023-01-01,2023-08-23,patient_024,Sample Insurance,enc_3c024c6c,896188,Lisinopril 10 MG Oral Tablet,13,117,8,849,44054006,Diabetes mellitus
+2023-02-03,,patient_024,Sample Insurance,enc_7e89f185,860975,Metformin 500 MG Oral Tablet,81,43,10,299,44054006,Diabetes mellitus
+2023-06-11,,patient_024,Sample Insurance,enc_c758d5d0,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",12,127,2,317,44054006,Diabetes mellitus
+2023-02-23,2023-11-01,patient_024,Sample Insurance,enc_dcc62e8d,897122,Glipizide 5 MG Oral Tablet,66,149,7,256,44054006,Diabetes mellitus
+2023-08-17,,patient_024,Sample Insurance,enc_5648b38e,896188,Lisinopril 10 MG Oral Tablet,75,79,3,152,44054006,Diabetes mellitus
+2023-07-11,,patient_025,Sample Insurance,enc_2a85e253,860975,Metformin 500 MG Oral Tablet,47,54,2,899,44054006,Diabetes mellitus
+2023-10-13,,patient_025,Sample Insurance,enc_92cf58c3,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",188,56,9,215,44054006,Diabetes mellitus
+2023-12-01,,patient_025,Sample Insurance,enc_3217cab5,897122,Glipizide 5 MG Oral Tablet,115,55,1,182,44054006,Diabetes mellitus
+2023-10-12,,patient_025,Sample Insurance,enc_57dc6066,896188,Lisinopril 10 MG Oral Tablet,193,149,10,834,44054006,Diabetes mellitus
+2023-12-06,,patient_025,Sample Insurance,enc_deb44eab,860975,Metformin 500 MG Oral Tablet,43,10,5,499,44054006,Diabetes mellitus
+2023-07-24,,patient_025,Sample Insurance,enc_404b41d2,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",52,119,9,712,44054006,Diabetes mellitus
+2023-07-02,,patient_025,Sample Insurance,enc_9b9eb6e5,897122,Glipizide 5 MG Oral Tablet,127,148,8,949,44054006,Diabetes mellitus
+2023-07-03,,patient_026,Sample Insurance,enc_e4e6a881,860975,Metformin 500 MG Oral Tablet,105,97,2,110,44054006,Diabetes mellitus
+2023-05-02,,patient_026,Sample Insurance,enc_07468db3,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",30,9,2,653,44054006,Diabetes mellitus
+2023-06-19,,patient_026,Sample Insurance,enc_400ccb2b,897122,Glipizide 5 MG Oral Tablet,158,74,1,694,44054006,Diabetes mellitus
+2023-08-21,,patient_026,Sample Insurance,enc_1292bb9f,896188,Lisinopril 10 MG Oral Tablet,55,38,1,127,44054006,Diabetes mellitus
+2023-08-06,,patient_026,Sample Insurance,enc_d1b9d461,860975,Metformin 500 MG Oral Tablet,82,30,9,96,44054006,Diabetes mellitus
+2023-08-02,,patient_027,Sample Insurance,enc_ea482f4e,860975,Metformin 500 MG Oral Tablet,103,111,1,75,44054006,Diabetes mellitus
+2023-10-19,2024-03-09,patient_027,Sample Insurance,enc_15184543,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",108,51,8,775,44054006,Diabetes mellitus
+2023-01-28,,patient_028,Sample Insurance,enc_4580e982,860975,Metformin 500 MG Oral Tablet,139,113,10,575,44054006,Diabetes mellitus
+2023-07-06,,patient_028,Sample Insurance,enc_9ccb9165,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",16,7,7,799,44054006,Diabetes mellitus
+2023-12-29,,patient_028,Sample Insurance,enc_a49d5617,897122,Glipizide 5 MG Oral Tablet,27,42,3,932,44054006,Diabetes mellitus
+2023-01-15,,patient_028,Sample Insurance,enc_5cded7b9,896188,Lisinopril 10 MG Oral Tablet,128,32,10,88,44054006,Diabetes mellitus
+2023-09-30,,patient_028,Sample Insurance,enc_a9396114,860975,Metformin 500 MG Oral Tablet,135,48,9,194,44054006,Diabetes mellitus
+2023-01-13,,patient_028,Sample Insurance,enc_1eb4440d,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",77,142,3,282,44054006,Diabetes mellitus
+2023-04-19,,patient_028,Sample Insurance,enc_a2bc5d41,897122,Glipizide 5 MG Oral Tablet,120,38,8,985,44054006,Diabetes mellitus
+2023-08-24,,patient_029,Sample Insurance,enc_e2be8744,860975,Metformin 500 MG Oral Tablet,178,105,6,741,44054006,Diabetes mellitus
+2023-10-09,,patient_029,Sample Insurance,enc_2dc9400c,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",196,63,6,790,44054006,Diabetes mellitus
+2023-10-16,,patient_030,Sample Insurance,enc_72b4cc89,860975,Metformin 500 MG Oral Tablet,30,74,7,673,44054006,Diabetes mellitus
+2023-01-04,2023-12-17,patient_030,Sample Insurance,enc_18ee7e28,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",103,99,8,872,44054006,Diabetes mellitus
+2023-09-04,,patient_031,Sample Insurance,enc_79e195c9,860975,Metformin 500 MG Oral Tablet,40,44,5,597,44054006,Diabetes mellitus
+2023-08-11,2024-04-16,patient_031,Sample Insurance,enc_7f25f160,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",84,8,6,167,44054006,Diabetes mellitus
+2023-04-04,,patient_032,Sample Insurance,enc_f61f1669,860975,Metformin 500 MG Oral Tablet,188,66,9,243,44054006,Diabetes mellitus
+2023-12-01,,patient_032,Sample Insurance,enc_9e0d9365,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",35,48,5,375,44054006,Diabetes mellitus
+2023-04-28,2023-12-25,patient_033,Sample Insurance,enc_74a16a83,860975,Metformin 500 MG Oral Tablet,29,117,1,139,44054006,Diabetes mellitus
+2023-05-22,,patient_033,Sample Insurance,enc_ab1f088c,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",46,130,11,560,44054006,Diabetes mellitus
+2023-12-22,,patient_033,Sample Insurance,enc_19cc12a6,897122,Glipizide 5 MG Oral Tablet,12,138,2,59,44054006,Diabetes mellitus
+2023-05-18,2023-06-29,patient_034,Sample Insurance,enc_690a43a7,860975,Metformin 500 MG Oral Tablet,177,134,4,370,44054006,Diabetes mellitus
+2023-11-15,,patient_034,Sample Insurance,enc_65dd1a92,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",26,13,11,960,44054006,Diabetes mellitus
+2023-02-07,,patient_034,Sample Insurance,enc_b8466bec,897122,Glipizide 5 MG Oral Tablet,103,99,1,630,44054006,Diabetes mellitus
+2023-11-14,2024-11-11,patient_034,Sample Insurance,enc_3bc3d93a,896188,Lisinopril 10 MG Oral Tablet,126,124,11,186,44054006,Diabetes mellitus
+2023-03-17,,patient_034,Sample Insurance,enc_380adbc8,860975,Metformin 500 MG Oral Tablet,10,44,6,621,44054006,Diabetes mellitus
+2023-11-16,2024-09-07,patient_034,Sample Insurance,enc_c3cc3778,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",114,18,3,774,44054006,Diabetes mellitus
+2023-01-05,,patient_035,Sample Insurance,enc_6292a781,860975,Metformin 500 MG Oral Tablet,87,66,4,650,44054006,Diabetes mellitus
+2023-08-25,,patient_035,Sample Insurance,enc_eeab84b6,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",155,44,8,344,44054006,Diabetes mellitus
+2023-04-14,,patient_035,Sample Insurance,enc_eacbee82,897122,Glipizide 5 MG Oral Tablet,188,129,6,914,44054006,Diabetes mellitus
+2023-01-23,,patient_035,Sample Insurance,enc_383c450c,896188,Lisinopril 10 MG Oral Tablet,162,149,1,552,44054006,Diabetes mellitus
+2023-11-05,2024-01-12,patient_035,Sample Insurance,enc_1b2d30d9,860975,Metformin 500 MG Oral Tablet,188,138,3,440,44054006,Diabetes mellitus
+2023-06-28,,patient_035,Sample Insurance,enc_1ae43f88,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",24,115,1,527,44054006,Diabetes mellitus
+2023-06-06,,patient_036,Sample Insurance,enc_47cf6d18,860975,Metformin 500 MG Oral Tablet,106,37,4,647,44054006,Diabetes mellitus
+2023-11-18,2024-04-18,patient_036,Sample Insurance,enc_8aca2f0c,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",83,101,6,855,44054006,Diabetes mellitus
+2023-06-08,,patient_036,Sample Insurance,enc_fb226ccc,897122,Glipizide 5 MG Oral Tablet,118,19,8,310,44054006,Diabetes mellitus
+2023-06-06,,patient_036,Sample Insurance,enc_ee29fdc1,896188,Lisinopril 10 MG Oral Tablet,85,134,11,144,44054006,Diabetes mellitus
+2023-04-25,,patient_036,Sample Insurance,enc_8397ae49,860975,Metformin 500 MG Oral Tablet,45,30,11,332,44054006,Diabetes mellitus
+2023-03-10,2023-12-18,patient_036,Sample Insurance,enc_b492dfb7,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",83,108,6,183,44054006,Diabetes mellitus
+2023-07-19,,patient_036,Sample Insurance,enc_cbec1937,897122,Glipizide 5 MG Oral Tablet,99,50,11,445,44054006,Diabetes mellitus
+2023-08-06,,patient_036,Sample Insurance,enc_42d61bf8,896188,Lisinopril 10 MG Oral Tablet,199,115,8,877,44054006,Diabetes mellitus
+2023-12-22,2024-06-01,patient_037,Sample Insurance,enc_a72b8e59,860975,Metformin 500 MG Oral Tablet,129,41,8,176,44054006,Diabetes mellitus
+2023-04-16,2024-02-26,patient_037,Sample Insurance,enc_106d0a2a,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",131,141,6,100,44054006,Diabetes mellitus
+2023-01-29,,patient_037,Sample Insurance,enc_938fc700,897122,Glipizide 5 MG Oral Tablet,50,15,7,818,44054006,Diabetes mellitus
+2023-10-29,,patient_037,Sample Insurance,enc_72c8d222,896188,Lisinopril 10 MG Oral Tablet,99,114,4,231,44054006,Diabetes mellitus
+2023-11-09,,patient_038,Sample Insurance,enc_ddde7401,860975,Metformin 500 MG Oral Tablet,191,59,3,985,44054006,Diabetes mellitus
+2023-05-29,,patient_038,Sample Insurance,enc_f666dc39,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",62,141,10,485,44054006,Diabetes mellitus
+2023-11-09,,patient_038,Sample Insurance,enc_44f708c0,897122,Glipizide 5 MG Oral Tablet,178,39,4,586,44054006,Diabetes mellitus
+2023-03-31,2023-11-25,patient_038,Sample Insurance,enc_02c995e0,896188,Lisinopril 10 MG Oral Tablet,171,95,1,689,44054006,Diabetes mellitus
+2023-12-30,2024-07-28,patient_038,Sample Insurance,enc_a4e40175,860975,Metformin 500 MG Oral Tablet,161,29,7,229,44054006,Diabetes mellitus
+2023-07-17,,patient_038,Sample Insurance,enc_073e3d60,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",170,33,11,711,44054006,Diabetes mellitus
+2023-06-03,,patient_038,Sample Insurance,enc_db3d6749,897122,Glipizide 5 MG Oral Tablet,58,85,4,410,44054006,Diabetes mellitus
+2023-06-26,,patient_038,Sample Insurance,enc_2288cca6,896188,Lisinopril 10 MG Oral Tablet,95,67,8,610,44054006,Diabetes mellitus
+2023-09-14,,patient_039,Sample Insurance,enc_6dd1d993,860975,Metformin 500 MG Oral Tablet,188,127,8,772,44054006,Diabetes mellitus
+2023-11-14,,patient_039,Sample Insurance,enc_ab39596e,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",38,53,8,68,44054006,Diabetes mellitus
+2023-01-18,,patient_039,Sample Insurance,enc_dbb484ce,897122,Glipizide 5 MG Oral Tablet,124,117,2,271,44054006,Diabetes mellitus
+2023-06-15,2023-11-23,patient_039,Sample Insurance,enc_aed08d91,896188,Lisinopril 10 MG Oral Tablet,138,12,7,920,44054006,Diabetes mellitus
+2023-05-11,,patient_039,Sample Insurance,enc_7717afb6,860975,Metformin 500 MG Oral Tablet,119,128,1,136,44054006,Diabetes mellitus
+2023-02-24,,patient_039,Sample Insurance,enc_dd2f2e36,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",187,139,8,882,44054006,Diabetes mellitus
+2023-11-09,,patient_039,Sample Insurance,enc_dbea730f,897122,Glipizide 5 MG Oral Tablet,196,76,6,810,44054006,Diabetes mellitus
+2023-08-27,,patient_039,Sample Insurance,enc_646f44df,896188,Lisinopril 10 MG Oral Tablet,60,101,8,467,44054006,Diabetes mellitus
+2023-04-06,2024-02-17,patient_040,Sample Insurance,enc_792fb2c2,860975,Metformin 500 MG Oral Tablet,129,50,11,961,44054006,Diabetes mellitus
+2023-06-14,,patient_040,Sample Insurance,enc_73ef8351,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",151,59,2,56,44054006,Diabetes mellitus
+2023-11-26,,patient_040,Sample Insurance,enc_61f827f0,897122,Glipizide 5 MG Oral Tablet,160,89,3,673,44054006,Diabetes mellitus
+2023-02-05,,patient_040,Sample Insurance,enc_323e2088,896188,Lisinopril 10 MG Oral Tablet,91,6,1,864,44054006,Diabetes mellitus
+2023-01-11,,patient_041,Sample Insurance,enc_20f977e6,860975,Metformin 500 MG Oral Tablet,139,123,4,310,44054006,Diabetes mellitus
+2023-10-20,,patient_041,Sample Insurance,enc_7f4ac0a4,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",146,57,3,549,44054006,Diabetes mellitus
+2023-12-08,2024-03-27,patient_041,Sample Insurance,enc_a72d4ec8,897122,Glipizide 5 MG Oral Tablet,167,124,11,776,44054006,Diabetes mellitus
+2023-05-08,,patient_041,Sample Insurance,enc_3239abbe,896188,Lisinopril 10 MG Oral Tablet,123,119,1,575,44054006,Diabetes mellitus
+2023-01-09,,patient_041,Sample Insurance,enc_90718050,860975,Metformin 500 MG Oral Tablet,34,107,9,807,44054006,Diabetes mellitus
+2023-10-05,2023-11-07,patient_041,Sample Insurance,enc_17a6c1b0,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",163,33,2,776,44054006,Diabetes mellitus
+2023-03-16,2023-08-20,patient_042,Sample Insurance,enc_b9eed8e7,860975,Metformin 500 MG Oral Tablet,94,46,4,90,44054006,Diabetes mellitus
+2023-02-03,,patient_042,Sample Insurance,enc_033cc8c6,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",162,126,7,678,44054006,Diabetes mellitus
+2023-12-28,,patient_042,Sample Insurance,enc_e083c4db,897122,Glipizide 5 MG Oral Tablet,36,61,6,780,44054006,Diabetes mellitus
+2023-06-17,,patient_042,Sample Insurance,enc_2a7b955b,896188,Lisinopril 10 MG Oral Tablet,62,142,1,971,44054006,Diabetes mellitus
+2023-07-09,,patient_042,Sample Insurance,enc_56ea4dd5,860975,Metformin 500 MG Oral Tablet,73,134,6,412,44054006,Diabetes mellitus
+2023-07-12,,patient_042,Sample Insurance,enc_4e677996,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",45,119,10,78,44054006,Diabetes mellitus
+2023-09-24,,patient_043,Sample Insurance,enc_d3f009b6,860975,Metformin 500 MG Oral Tablet,173,117,11,856,44054006,Diabetes mellitus
+2023-08-20,,patient_043,Sample Insurance,enc_f14b3209,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",107,59,8,807,44054006,Diabetes mellitus
+2023-03-10,,patient_043,Sample Insurance,enc_60886057,897122,Glipizide 5 MG Oral Tablet,45,85,11,414,44054006,Diabetes mellitus
+2023-07-20,2023-10-30,patient_043,Sample Insurance,enc_5d551389,896188,Lisinopril 10 MG Oral Tablet,49,21,1,266,44054006,Diabetes mellitus
+2023-03-02,,patient_043,Sample Insurance,enc_dbd62a24,860975,Metformin 500 MG Oral Tablet,51,29,7,852,44054006,Diabetes mellitus
+2023-05-11,,patient_043,Sample Insurance,enc_b6037f56,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",117,106,2,573,44054006,Diabetes mellitus
+2023-04-11,,patient_044,Sample Insurance,enc_742abf56,860975,Metformin 500 MG Oral Tablet,58,21,10,618,44054006,Diabetes mellitus
+2023-11-07,,patient_044,Sample Insurance,enc_aafbfc44,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",21,66,8,388,44054006,Diabetes mellitus
+2023-09-21,,patient_044,Sample Insurance,enc_5549575d,897122,Glipizide 5 MG Oral Tablet,90,122,6,249,44054006,Diabetes mellitus
+2023-01-25,2023-11-18,patient_044,Sample Insurance,enc_f0f45a9b,896188,Lisinopril 10 MG Oral Tablet,152,63,10,538,44054006,Diabetes mellitus
+2023-01-26,,patient_045,Sample Insurance,enc_f03e875f,860975,Metformin 500 MG Oral Tablet,19,20,7,450,44054006,Diabetes mellitus
+2023-10-09,,patient_045,Sample Insurance,enc_31153348,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",144,18,5,568,44054006,Diabetes mellitus
+2023-05-17,,patient_045,Sample Insurance,enc_928d367c,897122,Glipizide 5 MG Oral Tablet,81,63,7,526,44054006,Diabetes mellitus
+2023-03-23,2023-08-02,patient_045,Sample Insurance,enc_ff45017f,896188,Lisinopril 10 MG Oral Tablet,26,18,8,669,44054006,Diabetes mellitus
+2023-07-07,,patient_045,Sample Insurance,enc_9d4857d4,860975,Metformin 500 MG Oral Tablet,140,41,11,985,44054006,Diabetes mellitus
+2023-07-02,,patient_045,Sample Insurance,enc_d715235a,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",48,19,8,546,44054006,Diabetes mellitus
+2023-12-15,,patient_046,Sample Insurance,enc_2c9e3ebc,860975,Metformin 500 MG Oral Tablet,150,20,10,157,44054006,Diabetes mellitus
+2023-11-07,,patient_046,Sample Insurance,enc_3feba769,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",43,17,2,465,44054006,Diabetes mellitus
+2023-04-06,2023-06-13,patient_046,Sample Insurance,enc_bb8c95e5,897122,Glipizide 5 MG Oral Tablet,55,33,1,526,44054006,Diabetes mellitus
+2023-11-14,,patient_046,Sample Insurance,enc_aa1997b0,896188,Lisinopril 10 MG Oral Tablet,194,20,8,797,44054006,Diabetes mellitus
+2023-08-27,,patient_046,Sample Insurance,enc_d1acafa2,860975,Metformin 500 MG Oral Tablet,167,107,4,438,44054006,Diabetes mellitus
+2023-06-26,,patient_047,Sample Insurance,enc_fba52502,860975,Metformin 500 MG Oral Tablet,151,124,2,373,44054006,Diabetes mellitus
+2023-05-26,,patient_047,Sample Insurance,enc_e28a238f,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",162,77,1,938,44054006,Diabetes mellitus
+2023-05-20,2024-04-06,patient_048,Sample Insurance,enc_089f322f,860975,Metformin 500 MG Oral Tablet,70,128,6,856,44054006,Diabetes mellitus
+2023-11-15,2023-12-25,patient_048,Sample Insurance,enc_8e4a0392,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",71,81,2,202,44054006,Diabetes mellitus
+2023-07-18,2023-10-14,patient_048,Sample Insurance,enc_b4ed9014,897122,Glipizide 5 MG Oral Tablet,81,97,6,934,44054006,Diabetes mellitus
+2023-08-31,,patient_048,Sample Insurance,enc_4f13fd7b,896188,Lisinopril 10 MG Oral Tablet,83,111,2,874,44054006,Diabetes mellitus
+2023-08-06,,patient_048,Sample Insurance,enc_08f9eb56,860975,Metformin 500 MG Oral Tablet,12,124,6,566,44054006,Diabetes mellitus
+2023-02-23,2023-09-17,patient_049,Sample Insurance,enc_81aec14b,860975,Metformin 500 MG Oral Tablet,18,103,4,939,44054006,Diabetes mellitus
+2023-08-29,,patient_049,Sample Insurance,enc_2f1083a4,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",172,86,1,265,44054006,Diabetes mellitus
+2023-01-03,2023-10-28,patient_049,Sample Insurance,enc_dea5a918,897122,Glipizide 5 MG Oral Tablet,129,129,9,378,44054006,Diabetes mellitus
+2023-03-09,,patient_049,Sample Insurance,enc_bb29eb22,896188,Lisinopril 10 MG Oral Tablet,107,15,9,372,44054006,Diabetes mellitus
+2023-05-03,,patient_049,Sample Insurance,enc_dd3f8713,860975,Metformin 500 MG Oral Tablet,146,80,10,570,44054006,Diabetes mellitus
+2023-02-09,2023-10-22,patient_049,Sample Insurance,enc_fe846c58,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",133,42,8,300,44054006,Diabetes mellitus
+2023-06-25,,patient_050,Sample Insurance,enc_274dde83,860975,Metformin 500 MG Oral Tablet,46,64,5,642,44054006,Diabetes mellitus
+2023-04-24,,patient_050,Sample Insurance,enc_86de18b6,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",71,97,3,747,44054006,Diabetes mellitus
+2023-11-19,,patient_050,Sample Insurance,enc_5a859d5d,897122,Glipizide 5 MG Oral Tablet,107,44,11,798,44054006,Diabetes mellitus
+2023-10-16,2024-04-09,patient_050,Sample Insurance,enc_e8bfbbab,896188,Lisinopril 10 MG Oral Tablet,89,96,1,620,44054006,Diabetes mellitus
+2023-02-28,,patient_050,Sample Insurance,enc_2c3f1f1f,860975,Metformin 500 MG Oral Tablet,22,111,9,742,44054006,Diabetes mellitus
+2023-06-19,,patient_050,Sample Insurance,enc_c334ffaa,860901,"Insulin, Regular, Human 100 UNT/ML Injectable Solution",164,11,5,796,44054006,Diabetes mellitus

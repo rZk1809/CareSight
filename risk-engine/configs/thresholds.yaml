@@ -1,0 +1,16 @@
+# Decision thresholds for model evaluation
+
+# Initial demo thresholds (can be auto-tuned later)
+high_sensitivity: 0.25   # Lower threshold to catch more positives
+high_ppv: 0.45           # Higher threshold for fewer, more actionable alerts
+
+# Additional thresholds for analysis
+balanced: 0.35           # Balanced sensitivity/specificity
+conservative: 0.60       # Very high precision, low recall
+
+# Threshold optimization parameters (for future use)
+optimization:
+  metric: "f1"           # Metric to optimize for threshold selection
+  cv_folds: 5            # Cross-validation folds for threshold tuning
+  search_range: [0.1, 0.9]  # Range to search for optimal threshold
+  search_steps: 50       # Number of threshold values to test

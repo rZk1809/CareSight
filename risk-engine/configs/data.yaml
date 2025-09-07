@@ -1,0 +1,17 @@
+# Data paths and directories
+input_dir: "sample_data"   # Sample data for testing
+interim_dir: "data/interim"
+processed_dir: "data/processed"
+models_dir: "data/models"
+reports_dir: "data/reports"
+
+# Cohort selection parameters
+min_age: 18
+reference_date: "2024-12-31"  # Data freeze/as-of date
+
+# Time windows for features and outcomes
+lookback_days: 180           # Feature computation window
+prediction_window_days: 90   # Outcome prediction window
+
+# Label definition - encounter classes that indicate deterioration
+positive_encounter_classes: ["emergency", "inpatient", "urgentcare"]

@@ -1,0 +1,28 @@
+# LightGBM model configuration
+
+# Model hyperparameters
+params:
+  n_estimators: 500
+  learning_rate: 0.05
+  max_depth: -1
+  num_leaves: 31
+  subsample: 0.9
+  colsample_bytree: 0.9
+  reg_lambda: 1.0
+  min_child_samples: 50
+  random_state: 42
+
+# Class balancing
+class_weight: "balanced"
+
+# Target and identifier columns
+target: "label_90d"
+id_cols: ["patient", "as_of"]
+
+# Training parameters
+validation_split: 0.25
+stratify: true
+
+# Early stopping (optional)
+early_stopping_rounds: 50
+eval_metric: "auc"

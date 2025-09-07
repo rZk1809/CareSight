@@ -1,0 +1,134 @@
+stages:
+  build_cohort:
+    cmd: >
+      python src/data/build_cohort.py
+      --input-dir $(yq eval '.input_dir' configs/data.yaml)
+      --reference-date $(yq eval '.reference_date' configs/data.yaml)
+      --min-age $(yq eval '.min_age' configs/data.yaml)
+      --output $(yq eval '.interim_dir' configs/data.yaml)/cohort.parquet
+    deps:
+      - src/data/build_cohort.py
+      - src/common/io.py
+      - src/common/logging.py
+      - configs/data.yaml
+    outs:
+      - data/interim/cohort.parquet
+
+  make_labels:
+    cmd: >
+      python src/data/make_labels.py
+      --input-dir $(yq eval '.input_dir' configs/data.yaml)
+      --cohort $(yq eval '.interim_dir' configs/data.yaml)/cohort.parquet
+      --prediction-window-days $(yq eval '.prediction_window_days' configs/data.yaml)
+      --positive-classes $(yq eval '.positive_encounter_classes | join(",")' configs/data.yaml)
+      --output $(yq eval '.interim_dir' configs/data.yaml)/labels.parquet
+    deps:
+      - src/data/make_labels.py
+      - src/common/io.py
+      - src/common/logging.py
+      - configs/data.yaml
+      - data/interim/cohort.parquet
+    outs:
+      - data/interim/labels.parquet
+
+  make_features:
+    cmd: >
+      python src/features/rolling_stats.py
+      --input-dir $(yq eval '.input_dir' configs/data.yaml)
+      --cohort $(yq eval '.interim_dir' configs/data.yaml)/cohort.parquet
+      --lookback-days $(yq eval '.lookback_days' configs/data.yaml)
+      --hba1c-codes $(yq eval '.loinc.hba1c | join(",")' configs/features.yaml)
+      --sbp-codes $(yq eval '.loinc.sbp | join(",")' configs/features.yaml)
+      --dbp-codes $(yq eval '.loinc.dbp | join(",")' configs/features.yaml)
+      --output $(yq eval '.processed_dir' configs/data.yaml)/features.parquet
+    deps:
+      - src/features/rolling_stats.py
+      - src/common/io.py
+      - src/common/logging.py
+      - configs/data.yaml
+      - configs/features.yaml
+      - data/interim/cohort.parquet
+    outs:
+      - data/processed/features.parquet
+
+  merge_training_table:
+    cmd: >
+      python src/data/merge_training_table.py
+      --features $(yq eval '.processed_dir' configs/data.yaml)/features.parquet
+      --labels $(yq eval '.interim_dir' configs/data.yaml)/labels.parquet
+      --output $(yq eval '.processed_dir' configs/data.yaml)/train.parquet
+    deps:
+      - src/data/merge_training_table.py
+      - src/common/io.py
+      - src/common/logging.py
+      - data/processed/features.parquet
+      - data/interim/labels.parquet
+    outs:
+      - data/processed/train.parquet
+
+  train_lgbm:
+    cmd: >
+      python src/models/train_lgbm.py
+      --dataset $(yq eval '.processed_dir' configs/data.yaml)/train.parquet
+      --target $(yq eval '.target' configs/model_lightgbm.yaml)
+      --id-cols $(yq eval '.id_cols | join(",")' configs/model_lightgbm.yaml)
+      --validation-split $(yq eval '.validation_split' configs/model_lightgbm.yaml)
+      --stratify
+      --output-dir $(yq eval '.models_dir' configs/data.yaml)/lgbm
+      --n-estimators $(yq eval '.params.n_estimators' configs/model_lightgbm.yaml)
+      --learning-rate $(yq eval '.params.learning_rate' configs/model_lightgbm.yaml)
+      --max-depth $(yq eval '.params.max_depth' configs/model_lightgbm.yaml)
+      --num-leaves $(yq eval '.params.num_leaves' configs/model_lightgbm.yaml)
+      --subsample $(yq eval '.params.subsample' configs/model_lightgbm.yaml)
+      --colsample-bytree $(yq eval '.params.colsample_bytree' configs/model_lightgbm.yaml)
+      --reg-lambda $(yq eval '.params.reg_lambda' configs/model_lightgbm.yaml)
+      --min-child-samples $(yq eval '.params.min_child_samples' configs/model_lightgbm.yaml)
+      --random-state $(yq eval '.params.random_state' configs/model_lightgbm.yaml)
+      --class-weight $(yq eval '.class_weight' configs/model_lightgbm.yaml)
+    deps:
+      - src/models/train_lgbm.py
+      - src/common/io.py
+      - src/common/logging.py
+      - configs/data.yaml
+      - configs/model_lightgbm.yaml
+      - data/processed/train.parquet
+    outs:
+      - data/models/lgbm/lgbm.pkl
+      - data/models/lgbm/val.parquet
+
+  calibrate:
+    cmd: >
+      python src/models/calibrate.py
+      --model $(yq eval '.models_dir' configs/data.yaml)/lgbm/lgbm.pkl
+      --validation $(yq eval '.models_dir' configs/data.yaml)/lgbm/val.parquet
+      --output $(yq eval '.models_dir' configs/data.yaml)/lgbm/calibrator_isotonic.pkl
+    deps:
+      - src/models/calibrate.py
+      - src/common/io.py
+      - src/common/logging.py
+      - configs/data.yaml
+      - data/models/lgbm/lgbm.pkl
+      - data/models/lgbm/val.parquet
+    outs:
+      - data/models/lgbm/calibrator_isotonic.pkl
+
+  evaluate:
+    cmd: >
+      python src/models/evaluate.py
+      --model $(yq eval '.models_dir' configs/data.yaml)/lgbm/lgbm.pkl
+      --calibrator $(yq eval '.models_dir' configs/data.yaml)/lgbm/calibrator_isotonic.pkl
+      --validation $(yq eval '.models_dir' configs/data.yaml)/lgbm/val.parquet
+      --high-sensitivity-threshold $(yq eval '.high_sensitivity' configs/thresholds.yaml)
+      --high-ppv-threshold $(yq eval '.high_ppv' configs/thresholds.yaml)
+      --output $(yq eval '.reports_dir' configs/data.yaml)/metrics.json
+    deps:
+      - src/models/evaluate.py
+      - src/common/io.py
+      - src/common/logging.py
+      - configs/data.yaml
+      - configs/thresholds.yaml
+      - data/models/lgbm/lgbm.pkl
+      - data/models/lgbm/calibrator_isotonic.pkl
+      - data/models/lgbm/val.parquet
+    outs:
+      - data/reports/metrics.json

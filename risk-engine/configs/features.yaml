@@ -1,0 +1,28 @@
+# Feature engineering configuration
+
+# LOINC codes for key clinical measurements
+loinc:
+  hba1c: ["4548-4", "17856-6"]     # Common HbA1c codes (Synthea may have text desc too)
+  sbp:   ["8480-6"]                # Systolic blood pressure
+  dbp:   ["8462-4"]                # Diastolic blood pressure
+
+# Additional feature parameters (for future expansion)
+feature_windows:
+  short_term: 30    # days
+  medium_term: 90   # days  
+  long_term: 180    # days
+
+# Thresholds for clinical values (for future categorical features)
+clinical_thresholds:
+  hba1c:
+    normal: 5.7
+    prediabetic: 6.5
+    diabetic: 6.5
+  sbp:
+    normal: 120
+    elevated: 130
+    high: 140
+  dbp:
+    normal: 80
+    elevated: 80
+    high: 90
